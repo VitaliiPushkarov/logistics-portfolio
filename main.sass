@@ -1,0 +1,1442 @@
+$para-fz-1024: 1.1vw
+$para-fz-991: 2vw
+$para-fz-479: 4.2vw
+$para-lh-1024: 1.3vw
+$para-lh-991: 2.2vw
+$para-lh-479: 5.2vw
+$para-big-fz-1024: 2.2vw
+$para-big-fz-991: 3.8vw
+$para-big-fz-479: 6.2vw
+$para-big-lh-1024: 2.4vw
+$para-big-lh-991: 4.5vw
+$para-big-lh-479: 7.2vw
+$head-fz-1024: 3.8vw
+$head3-fz-1024: 3vw
+$head-fz-991: 6vw
+$head3-fz-991: 5.2vw
+$head-fz-479: 8vw
+$head3-fz-479: 7.2vw
+$head-lh-1024: 4vw
+$head3-lh-1024: 3.2vw
+$head-lh-991: 6.5vw
+$head3-lh-991: 5.7vw
+$head-lh-479: 7.6vw
+$head3-lh-479: 8vw
+$letter-spacing: -.1vw
+$fw300: 300
+$border-radius: 1.4vw
+$border-radius-991: 2.395vw
+$border-radius-479: 4.2vw
+
+$yellow: #ffd60a
+$pink: #e7a2a9
+$dark-orange: #bc6c25
+$orange: #dda15e
+$plum: #b698b9
+$black: #000
+$white: #fff
+$purple: #b698b9
+$old-lace: #fefae0
+$dark-slate-grey: #3f3f3f
+$greylight: #9c978f
+$light-blue: #00b4d8
+$dark-blue: #0077b6
+$darkest-blue: #03045e
+$green: #606c38
+$dark-green: #283618
+$light-green: #38a3a5
+
+        
+*
+    box-sizing: border-box
+body
+    font-family: 'Noto', sans-serif
+    margin: 0
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary
+    display: block
+.grid-3-library
+    display: grid
+    padding: 0
+    align-items: flex-start
+    grid-template-columns: repeat(3,1fr)
+    grid-auto-rows: auto
+    gap: 1.4vw
+.w-inline-block
+    display: inline-block
+    max-width: 100%
+.w-button
+    color: $white
+    line-height: inherit
+    cursor: pointer
+    background-color: $light-blue
+    border: 0
+    border-radius: 0
+    padding: 9px 15px
+    text-decoration: none
+    display: inline-block
+.w-layout-cell
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    flex-direction: column
+    padding: 1vw
+
+img
+    vertical-align: middle
+    max-width: 100%
+    display: inline-block
+.beige
+    color: $old-lace
+p
+    margin: 0
+.paragraph
+    letter-spacing: 0
+    font-size: $para-fz-1024
+    line-height: 1.3vw
+    font-weight: $fw300
+    text-decoration: none
+.paragraph-big
+    letter-spacing: -.1vw
+    font-size: $para-big-fz-1024
+    line-height: $para-big-lh-1024
+    font-weight: $fw300
+    &.center
+        text-align: center
+    &.fw400
+        font-weight: 400
+.big-small-text
+    display: flex
+    flex-direction: column
+    width: 100%
+    gap: 1vw
+    align-items: flex-start
+h1, h2, h3
+    font-size: $head-fz-1024
+    line-height: $head-lh-1024
+    letter-spacing: $letter-spacing
+    font-weight: $fw300
+    text-transform: none
+h1
+    &.h-thankyou
+            color: $orange
+            text-transform: uppercase
+            margin-top: 0
+            margin-bottom: 0
+            font-size: 48px
+            font-weight: 600
+            line-height: 56px
+            .span-black
+                color: $black
+.h1
+    &-hero
+        text-align: left
+        letter-spacing: $letter-spacing
+        text-transform: none
+        margin-top: 0
+        margin-bottom: 0
+        font-size: $head-fz-1024
+        font-weight: 600
+        line-height: $head-lh-1024
+    
+.h2
+    color: $black
+    text-align: left
+    letter-spacing: $letter-spacing
+    text-transform: none
+    max-width: 37.5vw
+    margin-top: 0
+    margin-bottom: 0
+    font-size: $head-fz-1024
+    font-weight: 500
+    line-height: $head-lh-1024
+    &.white
+        color: $white
+h3
+    color: $dark-blue
+    text-transform: uppercase
+    margin-top: 20px
+    margin-bottom: 10px
+    font-size: 26px
+    font-weight: 600
+    line-height: 26px
+.h3
+    color: $white
+    margin-top: 0
+    margin-bottom: 0
+    font-size: $head3-fz-1024
+    font-weight: 400
+    line-height: $head3-lh-1024
+    &.greylight
+        color: $greylight
+
+.relative
+    position: relative
+.container
+    width: 76.4vw
+    height: 100%
+    margin-left: auto
+    margin-right: auto
+    padding-top: 4.2vw
+    padding-bottom: 4.2vw
+    display: flex
+    justify-content: center
+    flex-direction: column
+    gap: 5.333vw
+    &.wide
+        width: 100vw
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        &.relative
+            justify-content: flex-start
+            align-items: center
+            padding-top: 0
+            padding-bottom: 0
+            display: flex
+            overflow: hidden
+    &-tp
+        flex-direction: column
+        justify-content: center
+        max-width: 1170px
+        height: 100%
+        margin-left: auto
+        margin-right: auto
+        display: flex
+    &.hero-sec
+        height: 100%
+        justify-content: center
+        align-items: center
+        padding-top: 6.8vw
+        background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)) , url('../img/heero.jpg')
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        .all-text-wrapper
+            justify-content: center
+            align-items: center
+            .h1-hero
+                text-align: center
+            .paragraph
+                text-align: center
+.flex-block
+    display: flex
+    gap: 72px
+    justify-content: center
+.section
+    padding-top: 0
+    padding-bottom: 0
+    &-hero
+        height: 65vh
+        padding-top: 0
+        padding-bottom: 0
+        &-wrapper
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            gap: 1.667vw
+            max-width: 37.5vw
+        &-header-wrapper
+            display: flex
+            flex-direction: column
+        &-button
+            display: flex
+            order: 0
+            gap: 0.833vw
+            align-items: center
+        .container
+            padding-bottom: 0
+    &-100vh
+        height: 100vh
+.center-align
+    display: flex
+    align-items: flex-start
+    &.one-level
+        align-items: center
+        justify-content: space-between
+.all-text-wrapper
+    gap: 1.7vw
+    flex-direction: column
+    align-items: flex-start
+    max-width: 37.5vw
+    display: flex    
+    &.max-width
+        max-width: 100%
+        text-align: center
+        align-items: center
+        .h2
+            text-align: center
+.all-content-wrapper
+    z-index: 2
+    justify-content: flex-start
+    align-items: flex-end
+    width: 100%
+    height: 100%
+    padding-bottom: 5vw
+    padding-right: 5.556vw
+    display: flex
+    position: absolute
+.btn
+    border-radius: 100px
+    padding: 1.25vw 2.8vw
+    font-size: $para-fz-1024
+    line-height: $para-fz-1024
+    transition: all .3s
+    text-transform: uppercase
+    &-block
+        width: 100%
+    &.yellow
+        color: $black
+        background-color: $yellow
+        border: 1px solid $black
+        align-self: center
+        font-weight: $fw300
+        text-decoration: none
+        &:hover
+            background-color: $white
+    &.pink
+        color: $white
+        background-color: $pink
+        border: 1px solid $pink
+        align-self: center
+        font-weight: $fw300
+        text-decoration: none
+        &.tab-100
+            display: flex
+            align-items: center
+            justify-content: center
+        &:hover
+            background-color: $white
+            color: $pink
+    &.black
+        background-color: $black
+        border: 1px solid $black
+        font-weight: $fw300
+        text-decoration: none
+        &:hover
+            background-color: $white
+            color: $black
+        &.tab-100
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+        &.full-width
+            display: flex
+            margin-top: 0
+            width: 100%
+            min-width: 100%
+            justify-content: center
+            align-self: stretch
+            align-items: center
+    &-tp
+        border-radius: 100px
+        justify-content: center
+        align-items: center
+        width: 300px
+        height: 56px
+        font-size: 18px
+        font-weight: 400
+        line-height: 22px
+        display: flex
+    &.orange
+        border: 2px solid $orange
+        color: $orange
+        background-color: $old-lace
+        text-transform: uppercase
+        &:hover
+            color: $black
+            background-color: $white
+    &.transparent
+        background-color: transparent
+        border: 1px solid $white
+    &.blue
+        border: 1px solid $dark-blue
+        background-color: $dark-blue
+        &:hover
+            background-color: $white
+            color: $black
+
+.white
+    color: $white
+.yellow
+    background-color: $yellow
+.light-yellow
+    background-color: #fffbed
+.purple
+    background-color: $purple
+.light-green
+    background-color: $light-green
+.orange
+    color: $dark-orange
+    font-weight: 400
+.yellow-text
+    color: $yellow
+.dark-blue
+    background-color: $dark-blue
+.darkest-blue
+    background-color: $darkest-blue
+.tags-block
+    display: flex
+    align-items: center
+    gap: 0.6vw
+.tag-block
+    gap: 0.4vw
+    background-color: $white
+    border: 1px solid $black
+    border-width: 1px
+    border-radius: 100px
+    justify-content: center
+    align-items: center
+    padding: 0.5vw 1vw
+    display: flex
+    &-text
+        color: $black
+        font-size: 1vw
+        line-height: 1vw
+        font-weight: $fw300
+.two-tags
+    gap: 0.6vw
+    flex-direction: row
+    align-items: center
+    display: flex
+.img-block
+    border: 1px solid $black
+    width: 35vw
+    height: 22vw
+    object-fit: cover
+    &.img-contacts
+        width: 100%
+        height: 480px
+    &.first
+        width: 38.1vw
+.pixel-icon
+    width: 3.333vw
+    height: 3.333vw
+.checks
+    height: 1vw
+.cell-wrapper
+    gap: 1.2vw
+    flex-direction: column
+    align-items: flex-start
+    width: 100%
+    display: flex
+.library-title
+    gap: 24px
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 20px
+    display: flex
+    color: $black
+    text-transform: none
+    font-size: 3.889vw
+    font-weight: $fw300
+    line-height: 3.889vw
+.text-upper
+    text-transform: uppercase
+.orange-text
+    color: $orange
+.yellow-text
+    color: $yellow
+.pink-text
+    color: $pink  
+.library-list
+    display: grid
+    grid-template-columns: repeat(4,1fr)
+    grid-template-rows: auto auto
+    gap: .367vw
+    &.two-in-row
+        grid-template-columns: 1fr 1fr
+.library-card
+    gap: 1.1vw
+    flex-direction: column
+    align-items: flex-start
+    width: 100%
+    min-width: 100%
+    height: auto
+    text-decoration: none
+    display: flex
+    &-overflow
+        min-width: 100%
+        height: auto
+        position: relative
+    &-title
+        display: flex
+        justify-content: center
+        gap: 1.111vw
+        align-items: center
+    &-img
+        width: 2.5vw
+        height: 2.5vw
+    &-name
+        font-size: 1.389vw
+        line-height: 1.7vw
+        font-weight: 600
+        text-decoration: none
+    &-text
+        font-size: 1.389vw
+        line-height: 1.7vw
+.cover
+    border: 1px solid $black
+    border-radius: 1.1vw
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: auto
+    display: flex
+    position: static
+    overflow: hidden
+    cursor: pointer
+.cover-card
+    min-width: 100%
+    height: 20vw
+    transition: transform 400ms ease
+    object-fit: cover
+    &:hover
+        transform: scale(1.05)
+.library-plan
+    display: grid
+    gap: 1.25vw
+    grid-template-columns: repeat(3,1fr)
+    grid-template-rows: auto
+    &-card
+        display: flex
+        flex-direction: column
+        position: relative
+        padding: 1.7vw
+        background-color: $white
+        border: 1px solid $black
+        border-radius: $border-radius
+        align-items: flex-start
+        gap: 1.667vw
+        width: 100%
+        height: 20vw
+    &-points
+        display: grid
+        width: 100%
+        grid-template-columns: 1.111vw 1fr
+        grid-auto-columns: 1fr
+        grid-template-rows: auto auto auto
+        gap: 0.694vw 0.556vw
+    .btn
+        height: 43px
+.wr-margin-40
+    margin-bottom: 40px       
+.wr-margin-80
+    margin-bottom: 80px
+.wr-margin-90
+    margin-bottom: 90px
+.price-wrapper
+    gap: 0.694vw
+    flex-flow: column
+    margin-bottom: 1.111vw
+    margin-top: 1.111vw
+    display: flex
+.price-tag
+    gap: 0.833vw
+    justify-content: flex-start
+    align-items: center
+    display: flex
+.library-slider
+    text-align: center
+    clear: both
+    -webkit-tap-highlight-color: transparent
+    background: #ddd
+    position: relative
+    background-color: rgba(221, 221, 221, 0)
+    height: auto
+.mask-slider
+    z-index: 1
+    white-space: nowrap
+    display: block
+    position: relative
+    left: 0
+    right: 0
+    overflow: visible
+    width: 24.514vw
+    margin-right: 1.389vw
+.library-slide
+    white-space: normal
+    text-align: left
+    width: 100%
+    height: 100%
+    display: inline-block
+    position: relative
+    vertical-align: middle
+.template-card
+    grid-column-gap: 1.667vw
+    grid-row-gap: 4.667vw
+    flex-flow: column
+    align-items: flex-start
+    justify-content: space-between
+    height: 33vh
+    padding: 1.667vw
+    display: flex
+    background-color: $light-blue
+    cursor: pointer
+    transition: background-color .3s, color .3s, fill .3s
+    &:hover
+        background-color: $yellow
+        .white
+            color: $black
+        svg
+            fill: $black
+    &-img
+        object-fit: cover
+        border-radius: 0.7vw
+        flex-flow: column
+        justify-content: center
+        align-items: center
+        width: 3.333vw
+        height: 3.333vw
+        display: flex
+        overflow: hidden
+        cursor: pointer
+        &.big-img
+            width: 18vw
+            height: 18vw
+            .block-img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        svg
+            width: 100%
+            height: 100%
+            fill: $white
+    &-text
+        gap: 0.6vw
+        flex-flow: column
+        justify-content: space-between
+        align-items: flex-start
+        display: flex
+        .paragraph-big
+            font-weight: 400
+.template-img-about
+    grid-column-gap: 1.667vw
+    grid-row-gap: 1.667vw
+    flex-flow: column
+    justify-content: space-between
+    align-items: flex-start
+    display: flex
+.paginator
+    align-items: flex-end
+.slider-button-wrapper
+    display: inline-flex
+    gap: 0.5vw
+.left-arrow
+    border: 1px solid $dark-orange
+    border-radius: 100vw
+    justify-content: center
+    align-items: center
+    width: 3.333vw
+    height: 3.333vw
+    display: flex
+    cursor: pointer
+    transition: background-color .3s
+.right-arrow
+    background-color: $dark-orange
+    border: 1px solid $dark-orange
+    border-radius: 100vw
+    justify-content: center
+    align-items: center
+    width: 3.333vw
+    height: 3.333vw
+    display: flex
+    cursor: pointer
+    transition: background-color .3s
+    &-white
+        background-color: $white
+.arrow-white
+    height: 1.389vw
+    fill: $white
+.nav-wrap
+    position: relative
+    z-index: 1000
+    top: 0
+.navbar
+    padding-left: 0
+    padding-right: 0
+    bottom: auto
+    left: 0%
+    right: 0%
+    top: 0%
+    border-bottom: 1px solid $black
+    transition: height 250ms ease-out 0ms
+    background-color: $dark-blue
+    &.fixed
+        position: fixed
+        z-index: 1000
+.container-m.nav
+    justify-content: center
+    align-items: center
+    width: 76.4vw
+    max-width: none
+    height: 3.8vw
+    padding-top: 0
+    padding-bottom: 0
+    margin-right: auto
+    margin-left: auto
+    display: flex
+.navmenu
+    float: right
+    position: relative
+.nav-brand
+    float: left
+    color: $white
+    text-decoration: none
+    font-weight: 700
+    position: relative
+    &:hover
+        color: $light-blue
+.brand-logo
+    justify-content: flex-start
+    align-items: center
+    max-width: 21.944vw
+    display: flex
+    font-size: 22px
+    margin-right: auto
+.navlink
+    vertical-align: top
+    color: $white
+    text-align: center
+    margin-left: auto
+    margin-right: auto
+    padding: 20px
+    text-decoration: none
+    display: inline-block
+    position: relative
+    font-size: $para-fz-1024
+    font-weight: 400
+    &:hover
+        color: $light-blue
+.m-wrap
+    display: flex
+    a
+        background-color: $black
+        border-radius: 100vw
+        padding: 0.6vw 1.111vw
+        border: 1px solid $black
+        font-size: .972vw
+        font-weight: $fw300
+        color: $white
+        text-decoration: none
+        &:hover
+            background-color: $white
+            color: $black
+.burger-menu
+    display: none
+    flex-direction: column
+.burger-menu div 
+  width: 25px
+  height: 3px
+  background-color: $white
+  margin: 2px 0
+.nav-overlay 
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.5)
+  z-index: 999 /* Ensure the overlay is below the navbar but above other content */
+.cookie-banner 
+  position: fixed
+  bottom: 0
+  color: #fff
+  text-align: center
+  padding: 15px
+  display: none /* Initially hidden */
+  z-index: 1000
+  right: 0
+
+
+.cookie-button 
+    border: 1px solid $light-blue
+    background-color: $light-blue
+    border-radius: 100px
+    justify-content: center
+    align-items: center
+    width: 100%
+    padding: 10px 22px
+    font-size: 16px
+    font-weight: 400
+    line-height: 20px
+    transition: all .3s
+    display: flex
+    text-transform: uppercase
+    &:hover
+        background-color: $white
+        color: $black
+
+.cookies-banner
+    grid-row-gap: 0px
+    border: 2px solid $dark-green
+    background-color: $white
+    border-radius: 20px
+    flex-direction: column
+    width: 330px
+    height: auto
+    margin-bottom: 25px
+    margin-left: 25px
+    margin-right: 25px
+    padding: 25px
+    display: flex
+.text-x
+    display: flex
+    margin-bottom: 20px
+    gap: 12px
+.text-banner
+    color: $dark-slate-grey
+    font-size: 16px
+    line-height: 20px
+    text-align: left
+.footer-sec
+    background-color: $dark-blue
+    .paragraph
+        font-size: 18px
+        line-height: 22px
+        color: $black
+    .footer-wrapper
+        display: grid
+.right-block
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-auto-columns: 1fr
+    gap: 16px
+    .wrapper
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        gap: 24px
+        .contacts-wrapper
+            display: flex
+            flex-direction: column
+            gap: 12px
+            .quick-action
+                align-items: flex-start
+                text-decoration: none
+                display: flex
+                .paragraph
+                    color: $white
+        .points-wrapper
+            display: grid
+            grid-template-columns: 1fr 1fr
+            gap: 12px
+            .quick-action
+                gap: 12px
+                align-items: flex-start
+                text-decoration: none
+                display: flex
+                .orange-arrow
+                    width: 20px
+                    margin-top: -2px
+                .paragraph
+                    color: $white
+                    &:hover
+                        color: $light-blue
+input[type='text']
+    font-size: $para-fz-1024
+.wrapper-gif
+    border: 2px solid $dark-green
+    object-fit: cover
+    border-radius: 20px
+    width: 300px
+    height: 300px
+    overflow: hidden
+.gif-subscr
+    width: 100%
+    height: 100%
+    object-fit: cover
+.sub-wrapper
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-start
+    display: flex
+    width: 31vw
+.title-sub
+    display: flex
+    flex-direction: column
+    gap: 24px
+    align-items: flex-start
+    .paragraph-big
+        color: $black
+
+.frame
+    position: absolute
+    border: 1px solid $orange
+    border-radius: $border-radius
+.x-icon
+    cursor: pointer
+.testimonial-slider
+    .mask-slider
+        width: auto
+.review-card
+    grid-column-gap: 1.389vw
+    grid-row-gap: 2.78vw
+    border-radius: 1.389vw
+    flex-direction: column
+    align-items: flex-start
+    width: 31vw
+    height: 19vw
+    padding: 1.7vw
+    display: flex
+    border: 1px solid $dark-orange
+    &-img
+        grid-column-gap: 1.389vw
+        grid-row-gap: 1.389vw
+        align-items: center
+        display: flex
+    .round-photo
+        width: 4.167vw
+        height: 4.167vw
+        border-radius: 50%
+        object-fit: cover
+    &-about
+        grid-column-gap: 1.389vw
+        grid-row-gap: 1.389vw
+        flex-direction: column
+        align-items: flex-start
+        width: 100%
+        display: flex
+.contacts
+    &_wrapper
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        gap: 20px
+    &_form
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        gap: 5px
+        input, textarea
+            border: 1px solid black
+        label
+            font-size: $para-fz-1024
+        &-control
+            &--height
+                height: 45px
+    &_map
+        iframe
+            width: 100%
+            height: 100%
+.accordion-wrapper
+    display: flex
+    flex-direction: column
+    .accordion-header
+        width: 100%
+        text-align: left
+        transition: .4s
+        cursor: pointer
+        background-color: $light-blue
+        padding: 1vw 1.5vw
+        border-bottom: 0.5px solid $white
+.active, .accordion-header:hover
+    background-color: $dark-blue
+.accordion-header:after 
+  content: '\002B'
+  color: $white
+  font-weight: bold
+  float: right
+  margin-left: 5px
+
+.active:after 
+  content: "\2212"
+  
+.accordion-panel 
+  padding: 0 1.5vw
+  background-color: white
+  max-height: 0
+  overflow: hidden
+  transition: max-height 0.2s ease-out, padding-top 0.2s ease-out, padding-bottom 0.2s ease-out
+
+.accordion-panel.active 
+    padding-top: 1vw
+    padding-bottom: 1vw
+.img-hero
+  width: 15vw
+  height: 11vw
+  object-fit: cover
+.images-wrapper
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-auto-rows: auto
+  gap: .667vw
+.benefits-wrapper
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+.benefits-text-wrapper
+    display: flex
+    flex-direction: column
+    gap: 2.2vw
+    max-width: 35vw
+.benefits-img-wrapper
+    background-color: $dark-blue
+    border-radius: $border-radius
+    width: 4vw
+    height: 4vw
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: .5vw
+    svg
+        width: 100%
+        height: 100%
+.hubs
+    background: url('../img/map.jpg')
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+.technology
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)) ,url('../img/trans3.jpg')
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat    
+.technology-card
+    display: flex
+    height: 44vh
+    padding: 1.667vw
+    gap: 3.333vw
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    background-color: $dark-blue
+.technology-card-img
+    width: 7vw
+    height: 7vw
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: $border-radius
+    background-color: $yellow
+    svg
+        fill: $dark-blue
+        width: 4vw
+        height: 4vw
+.technology-card-text
+    display: flex
+    flex-direction: column
+    gap: 1.667vw
+    justify-content: center
+    align-items: center
+
+@media screen and ( max-width: 991px )
+    .container
+        width: 90.3vw
+        padding-top: 8vw
+        padding-bottom: 8vw
+        &.wide
+            padding-top: 2vw
+            padding-bottom: 2vw
+        &-tp
+            flex-direction: column
+            justify-content: center
+            align-items: flex-start
+            max-width: 640px
+            padding-top: 0
+            display: flex
+        &.hero-sec
+            padding-top: 13vw
+    .section-hero
+        height: 100vh
+    .checks
+        height: 1.4vw
+    .all-text-wrapper
+        gap: 2.8vw
+        min-width: 47vw
+    .all-content-wrapper
+        width: 90.3vw
+        padding-left: 0
+    .paragraph
+        font-size: $para-fz-991
+        line-height: $para-lh-991
+    .paragraph-big
+        font-size: $para-big-fz-991
+        line-height: $para-big-lh-991
+    .h1-hero
+        font-size: $head-fz-991
+        line-height: $head-lh-991
+    .h2
+        font-size: $head-fz-991
+        line-height: $head-lh-991
+        max-width: 60vw
+    .h3
+        font-size: $head3-fz-991
+        line-height: $head3-lh-991
+    .btn.yellow, .btn.white, .btn.pink, .btn.blue
+        padding: 2vw 4vw
+        font-size: $para-fz-991
+        line-height: $para-lh-991
+    .grid-3-library
+        grid-template-columns: 1fr 1fr
+        gap: 4.79vw 2vw
+    .cover
+        border-radius: $border-radius-991
+    .img-block, .cover-card
+        width: 38vw
+        height: 38vw
+    .btn
+        &.black
+            padding: 2vw 3.4vw
+            font-size: $para-fz-991
+            line-height: $para-lh-991
+            &.full-width
+                font-size: 2vw
+                line-height: 2.2vw
+    .tags-block
+        justify-content: center
+    .tag-block
+        padding: 0.8vw 1.2vw
+        &-text
+            font-size: 1.7vw
+            line-height: 1.7vw
+    .library-list
+        grid-template-columns: 1fr 1fr
+    .library-card-img
+        width: 3.333vw
+        height: 3.333vw
+    .library-card-name
+        font-size: 2.395vw
+        line-height: 2.234vw
+    .library-card-text
+        font-size: 1.916vw
+        line-height: 140%
+    .library-plan
+        grid-template-columns: 1fr
+        grid-template-rows: auto
+        &-card
+            padding: 2.878vw
+            gap: 2.878vw
+            border-radius: $border-radius-991
+            height: 100%
+        &-points
+            gap: 1.119vw 1vw
+            grid-template-columns: auto 1fr
+        .btn
+            height: auto
+    .price-wrapper
+        margin-bottom: 1.918vw
+    .price-tag
+        gap: 1.918vw
+    .mask-slider
+        gap: 2.878vw
+        margin-right: 2.395vw
+        width: 36vw
+    .template-card
+        height: 33vw
+        padding: 2.878vw
+        &-img
+            width: 5.6vw
+            height: 5.6vw
+            &.big-img
+                width: 25vw
+                height: 25vw
+    .review-card
+        height: 32vw
+        width: 49vw
+        border-radius: $border-radius-991
+        .round-photo
+            height: 6.8vw
+            width: 6.8vw
+    .left-arrow,.right-arrow
+        width: 6vw
+        height: 6vw
+        img
+            height: 2.333vw
+    .container-m.nav
+        justify-content: space-between
+        width: 90.3vw
+        height: 7.2vw
+    .m-wrap
+        margin-left: auto
+        padding-right: 2vw
+        a
+            padding: 1vw 2.2vw
+            font-size: 1.7vw
+    .navmenu 
+        display: none
+        flex-direction: column
+        position: fixed
+        padding-top: 8vw
+        left: 0
+        width: 100%
+        height: 100vh /* Adjust according to the height of your navbar */
+        background-color: $dark-blue
+        z-index: 1001 /* Ensure the nav menu is above the overlay */
+    .navmenu.active 
+        display: block
+        overflow: visible
+        position: absolute
+        left: 0
+        right: 0
+        top: 7.2vw
+    .burger-menu 
+        display: flex
+    .nav-overlay.active 
+        display: block
+    .navlink
+        position: relative
+        display: block
+        padding: 2.4vw 5vw
+        font-size: 2.4vw
+    .brand-logo
+        max-width: 50vw
+    .footer-sec .footer-wrapper
+        display: flex
+        flex-direction: column
+        gap: 24px
+    .flex-block
+        gap: 72px
+        flex-direction: column
+        margin-top: 75px
+    .sub-wrapper
+        gap: 48px
+    h1.h-thankyou
+        font-size: 40px
+        line-height: 48px
+    .title-sub .paragraph-big
+        font-size: 20px
+        line-height: 24px
+    .banner-sub
+        flex-direction: column
+        gap: 32px
+    .text-wrapper
+        width: 100%
+        max-width: none
+    .pixel-icon
+        width: 4.3vw
+        max-height: 4.3vw
+    .contacts_form
+        label
+            font-size: $para-fz-991
+    .sub-wrapper
+        width: auto
+    .contacts_form-control--height
+        height: 42px
+    input[type='text']
+        font-size: $para-fz-991
+    .img-hero
+        height: 22vw
+        width: 22vw
+    .benefits-text-wrapper
+        max-width: 100%
+    .benefits-img-wrapper
+        width: 7vw
+        height: 7vw
+        padding: 1vw
+    .technology-card-img
+        width: 10vw
+        height: 10vw
+
+@media screen and ( max-width: 479px )
+    .container
+        width: 92vw
+        padding-top: 12vw
+        padding-bottom: 12vw
+        justify-content: center
+        &.wide
+            &.relative
+                width: 100vw
+                height: 100%
+        &.relative
+            text-align: left
+        &-tp
+            width: 330px
+        &.hero-sec
+            padding-top: 22vw
+    .section-hero-wrapper
+        max-width: 100vw
+    .paragraph
+        font-size: $para-fz-479
+        line-height: $para-lh-479
+        max-width: none
+        text-align: left
+        &-big
+            font-size: $para-big-fz-479
+            line-height: $para-big-lh-479
+    .center-align
+        flex-direction: column
+        gap: 8vw
+    .all-text-wrapper
+        max-width: none
+        width: 100%
+        gap: 6vw
+    .img-block
+        width: 100%
+        height: 70vw
+        &.first
+            order: 1
+            width: 100%
+        &.img-contacts
+            height: auto
+    .h2
+        max-width: 80vw
+    .h3
+        font-size: $head3-fz-479
+        line-height: $head3-lh-479
+    .h1-hero.white.marg-down
+        margin-bottom: 0
+    .h1-hero, .h2
+        font-size: $head-fz-479
+        line-height: $head-lh-479
+    .btn.yellow, .btn.white, .btn.black, .btn.pink, .btn.blue
+        justify-content: center
+        align-items: center
+        width: 100%
+        padding-top: 4vw
+        padding-bottom: 4vw
+        font-size: 4.8vw
+        line-height: 4.8vw
+        display: flex
+    .btn.black.full-width
+        font-size: 4.2vw
+        line-height: 4.2vw
+    .tags-block
+        gap: 2.133vw
+        &.vertical
+            flex-direction: column
+            align-items: flex-start
+    .two-tags
+        grid-column-gap: 2.133vw
+        grid-row-gap: 2.133vw
+        flex-flow: wrap
+        align-items: center
+        display: flex
+    .tag-block
+        padding: 1.6vw 3.2vw
+        gap: 1.6vw
+        &.white
+            border-width: 1px
+            gap: 1.6vw
+        &-text
+            font-size: 3.7vw
+            line-height: 3.7vw
+    .checks
+        height: 3vw
+    .library-list
+        grid-template-columns: 1fr
+        gap: 8.533vw
+        &.two-in-row
+            grid-template-columns: 1fr
+    .cover
+        overflow: hidden
+        border-radius: $border-radius-479
+        position: static
+    .cover-card
+        height: 70vw
+    .library-card-name
+        font-size: 4.8vw
+        line-height: 120%
+    .library-card-text
+        font-size: 4.267vw
+    .library-plan
+        gap: 3.2vw
+        &-card
+            border-radius: $border-radius-479
+            gap: 6.4vw
+            border-width: 0
+            padding: 6.4vw
+        &-points
+            gap: 2.667vw 1.6vw
+    .price-wrapper
+        gap: 2.667vw
+    .price-tag
+        gap: 4.267vw
+    .mask-slider
+        width: 92vw
+    .library-slide
+        width: 92vw
+    .template-card
+        height: 65vw
+        padding: 6.4vw
+        gap: 6.4vw
+        &.m-height
+            height: 100vw
+        &-img
+            width: 12vw
+            height: 12vw
+            &.big-img
+                width: 75vw
+                height: 40vw
+            svg
+                height: 100%
+                
+    .review-card
+        min-height: 56vw
+        padding: 6.4vw
+        gap: 6.4vw
+        border-radius: $border-radius-479
+        width: auto
+    .template-img-about
+        gap: 6.4vw
+    .template-card-about
+        gap: 2.133vw
+    .left-arrow,.right-arrow
+        width: 14vw
+        height: 14vw
+        img
+            height: 8vw
+    .paginator
+        flex-direction: column
+        align-items: start
+    .brand-logo
+        max-width: 60vw
+        padding-left: 0
+    .container-m.nav
+        height: 14vw
+        width: 92vw
+    .m-wrap
+        padding-right: 5vw
+        a
+            padding: 3.733vw 3.733vw
+            font-size: 3.733vw
+    .navmenu
+        z-index: 1000
+        width: 100%
+        margin-top: 0
+        padding-top: 4.5vw
+        padding-left: 4vw
+        padding-right: 5vw
+    .navmenu.active
+        top: 14vw
+    .navlink
+        font-size: 4.267vw
+        padding: 3.2vw 0
+    .cookie-banner
+        position: fixed
+        bottom: 0
+        right: auto
+        margin-left: auto
+        margin-right: auto
+        width: 100vw
+        z-index: 2000
+    .cookies-banner
+        margin-left: auto
+        margin-right: auto
+    .text-banner
+        margin-bottom: 0
+    .text-x
+        flex-direction: row
+        gap: 8px
+    .x-icon
+        width: 28px
+        max-width: 28px        
+    .pixel-icon
+        width: 6.2vw
+        height: 6.2vw
+    .contacts_wrapper
+        grid-template-columns: 1fr
+    .contacts_form
+        label
+            font-size: $para-fz-479
+    .right-block .wrapper .points-wrapper
+        grid-template-columns: 1fr
+    .images-wrapper
+        align-self: center
+    .img-hero
+        width: 33vw
+        height: 33vw
+    .benefits-wrapper
+        gap: 7vw
